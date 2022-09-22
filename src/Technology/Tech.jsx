@@ -5,7 +5,7 @@ import "../App.css";
 import Title from "../Home/Title";
 import Articles from "../Home/Article/Articles";
 import Data from "../APIs";
-import SideArticals from "../Home/SideArticals";
+// import SideArticals from "../Home/SideArticals";
 import TopPosts from "../Home/TopPosts";
 import SideB from "../BOLLYWOOD/SideB";
 

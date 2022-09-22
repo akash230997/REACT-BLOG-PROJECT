@@ -9,8 +9,8 @@ import Articles from "../Home/Article/Articles";
 import Data from "../APIs";
 import SideArticals from './SideArticals'
 import TopPosts from "./TopPosts";
-import SideB from "../BOLLYWOOD/SideB";
-import LatestStoriesDetails from './LatestStoriesDetails';
+// import SideB from "../BOLLYWOOD/SideB";
+// import LatestStoriesDetails from './LatestStoriesDetails';
 // import SinglePage from "../SinglePage";
 
 export default function Home() {

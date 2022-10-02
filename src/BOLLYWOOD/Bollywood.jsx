@@ -1,6 +1,7 @@
 import React from 'react'
 
-import "../App.css";
+// import '../'
+
 
 import Title from "../Home/Title";
 import Articles from '../Home/Article/Articles';

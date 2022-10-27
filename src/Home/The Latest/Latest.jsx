@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 export default function Latest(props) {
     // const travel = 'Travel';
     const date = new Date().toDateString()  ;
-    console.log(props.imgURL)
+    // console.log(props.imgURL)
   return (
     <div className="page_latest">
       <NavLink

@@ -1,21 +1,38 @@
-import React from "react";
+import React , {useState , useEffect} from "react";
+import axios from "axios";
 
 import "../App.css";
 
 import Title from "../Home/Title";
 import Articles from "../Home/Article/Articles";
-import Data from "../APIs";
+// import Data from "../APIs";
 import SideArticals from "../Home/SideArticals";
 import TopPosts from "../Home/TopPosts";
 
 export default function Fitness() {
+  const [DataAPI, setData] = useState([]);
+
+  useEffect(() => {
+    const Store = async () => {
+      const res = await axios.get("https://testinngg.herokuapp.com/Data");
+      // setDate(res)
+      // console.log(res.data)
+      setData(res.data);
+    };
+    Store();
+    // return () => {
+    //   cleanup
+    // };
+  }, []);
+
+  // console.log(DataAPI);
   return (
     <div>
       <Title title="FITNESS AND MOOD" />
       <div className="theLatest">
         <div className="outerBox">
           <div className="left">
-            {Data.filter((Elem) => {
+            {DataAPI.filter((Elem) => {
               return Elem.category === "Fitness";
             }).map((Elem, index) => {
               // const key = index;
@@ -108,7 +125,7 @@ export default function Fitness() {
             </p>
           </div>
           <div className="right">
-            {Data.filter((Elem) => {
+            {DataAPI.filter((Elem) => {
               return Elem.category === "Stories";
             }).map((Elem, index) => {
               // const key = index;

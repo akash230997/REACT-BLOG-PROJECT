@@ -1,12 +1,29 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import { useLocation } from "react-router-dom";
-import Data from "./APIs";
+import axios from 'axios';
+// import Data from "./APIs";
 import Latest from "./Home/The Latest/Latest";
 
 // import SideArticals from "./Home/SideArticals";
 // import './App.css';
 
 export default function SinglePage() {
+
+    const [DataAPI, setData] = useState([]);
+
+    useEffect(() => {
+      const Store = async () => {
+        const res = await axios.get("https://testinngg.herokuapp.com/Data");
+        // setDate(res)
+        // console.log(res.data)
+        setData(res.data);
+      };
+      Store();
+      // return () => {
+      //   cleanup
+      // };
+    }, []);
+
   const Location = useLocation();
   console.log(Location);
   return (
@@ -88,7 +105,7 @@ export default function SinglePage() {
         </div>
       </div>
       <div className="bottom">
-        {Data.filter((Elem) => {
+        {DataAPI.filter((Elem) => {
           return Elem.category === "Latest";
         }).map((Elem, index) => {
           // const key = index;

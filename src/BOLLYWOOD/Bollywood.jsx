@@ -1,16 +1,34 @@
-import React from 'react'
-
-// import '../'
+import React, { useState } from 'react';
+import axios from 'axios';
+import { useEffect } from 'react';
 
 
 import Title from "../Home/Title";
 import Articles from '../Home/Article/Articles';
-import Data from '../APIs';
+// import Data from '../APIs';
 // import SideArticals from '../Home/SideArticals';
 import TopPosts from '../Home/TopPosts';
 import SideB from './SideB';
+// import { useEffect } from 'react';
 
 export default function Bollywood() {
+
+    const [DataAPI, setData] = useState([]);
+
+    useEffect(() => {
+      const Store = async () => {
+        const res = await axios.get("https://testinngg.herokuapp.com/Data");
+        // setDate(res)
+        // console.log(res.data)
+        setData(res.data);
+      };
+      Store();
+      // return () => {
+      //   cleanup
+      // };
+    }, []);
+
+    // console.log(DataAPI);
 
   return (
     <div>
@@ -18,7 +36,7 @@ export default function Bollywood() {
       <div className="theLatest">
         <div className="outerBox">
           <div className="left">
-            {Data.filter((Elem) => {
+            {DataAPI.filter((Elem) => {
               return Elem.category === "Travelling";
             }).map((Elem, index) => {
               // const key = index;
@@ -34,7 +52,7 @@ export default function Bollywood() {
             })}
           </div>
           <div className="right">
-            {Data.filter((Elem) => {
+            {DataAPI.filter((Elem) => {
               return Elem.category === "Travelling2";
             }).map((Elem, index) => {
               // const key = index;

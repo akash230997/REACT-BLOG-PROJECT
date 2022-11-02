@@ -13,7 +13,9 @@ export default function Hollywood() {
 
       useEffect(() => {
         const Store = async () => {
-          const res = await axios.get("https://testinngg.herokuapp.com/Data");
+          const res = await axios.get(
+            "https://blogbackendakash.herokuapp.com/Data"
+          );
           // setDate(res)
           // console.log(res.data)
           setData(res.data);

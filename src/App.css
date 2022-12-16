@@ -331,3 +331,151 @@ left_artical{
   display: flex;
   gap: 2rem;
 }
+
+
+
+/* ==============RegistrationPage=============== */
+
+.validationForm{
+  width: 80%;
+  /* height: 400px; */
+  margin: auto;
+  margin-top: 30px;
+  border: 3px solid #000;
+}
+.validationForm h1{
+  display: inline-block;
+ border-bottom: 4px solid #ffffff;
+}
+.validationForm h1:hover{
+  color: rgba(42, 183, 218, 0.845);
+  cursor: pointer;
+}
+.container{
+  /* border: 1px solid #000; */
+  display: flex;
+  height: 600px;
+  /* flex-direction: column; */
+  /* justify-content:flex-start; */
+  align-items: center;
+}
+.Main_left{
+  border: 1px solid #000;
+  width: 100%;
+  height: 100%;
+  background-color:cornflowerblue;
+}
+.Main_right {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #000; */
+  padding: 50px 100px;
+  background-image: url(./images/Frontleftimg.jpg);
+  background-position: top left;
+}
+
+.field{
+  display: inline-block;
+  font-size: 1.7rem;
+  width: 100%;
+  margin-bottom: 10px;
+  /* border: 1px solid #000; */
+}
+/* .textFeilds{
+  width: 80%;
+  padding: 1.8%;
+  border-radius: 7px;
+  font-size: 1rem;
+  border: none;
+} */
+
+.enjoy-css {
+  display: inline-block;
+  width: 90%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  /* margin: 250px; */
+  padding: 8px 20px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 18px/normal "Times New Roman", Times, serif;
+  color: rgba(0, 142, 198, 1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(252, 252, 252, 1);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(178, 178, 178, 0.2) inset;
+  box-shadow: 2px 2px 2px 0 rgba(178, 178, 178, 0.2) inset;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.66);
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.button {
+  backface-visibility: hidden;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  /* background: #47c; */
+  border-radius: 3px;
+  border: 0px solid #444;
+  border-width: 0px 0px 0px 0px;
+  padding: 10px 15px 10px 41px;
+  /* box-shadow: 0px 2px 0px #25a; */
+  color: #fff;
+  font-size: 16px;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal;
+  margin-top: 20px;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3)
+}
+
+.button>div {
+  color: #999;
+  font-size: 10px;
+  font-family: Helvetica Neue;
+  font-weight: initial;
+  font-style: normal;
+  text-align: center;
+  margin: 0px 0px 0px 0px
+}
+
+.button>i {
+  font-size: 1em;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  border: 0px solid transparent;
+  border-width: 0px 0px 0px 0px;
+  padding: 14px 7px 14px 7px;
+  margin: 0px 0px 0px 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 34px
+}
+
+.button>.ld {
+  font-size: initial
+}
+.logOut-btn{
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 1s;
+  background-color: skyblue;
+}
+.logOut-btn:hover{
+  background-color: #444;
+}
+.centerpoint{
+  margin-top: 100px;
+  padding: 50px;
+  height: 30vh;
+  background-color: #999;
+}

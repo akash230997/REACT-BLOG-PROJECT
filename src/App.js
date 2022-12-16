@@ -8,6 +8,9 @@ import Hollywood from './Hollywood/hollywood';
 import Fitness from './Fitness/Fitness';
 import Food from './Food/Food';
 import SinglePage from './SinglePage';
+import { Login } from './Login';
+import { Register } from './Register';
+import Main from './Main';
 
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
             <Route path='/Hollywood' element={<Hollywood />} />
             <Route path='/Fitness' element={<Fitness />} />
             <Route path='/Food' element={<Food />} />
+            <Route path='/Login' element={<Login />} />
+            <Route path='/Register' element={<Register />} />
+            <Route path='/Main' element={<Main />} />
             <Route path='/SinglePage' element={<SinglePage />} />
           </Routes>
         </div>

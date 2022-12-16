@@ -9,35 +9,38 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className='navbar'>
-              <Link to='/'>
-              <div className="uphead">
-                    <p>The</p><h1>Siren</h1>
-              </div>
-              </Link>
-              <ul>
-                <Link to='/'>
-                <li className="navdesign">Home</li>
-                </Link>
-                  <Link to='/Bollywood'>
-                <li className="navdesign">Travelling</li>
-                </Link>
-                <Link to='/Tech'>
-                <li className="navdesign">Technology</li>
-                </Link>
-                <Link to='/Hollywood' >
-                <li className="navdesign">Hollywood</li>
-                </Link>
-                <Link to='/Fitness'>
-                <li className="navdesign">Fitness</li>
-                </Link>
-                <Link to='/Food'>
-                <li className="navdesign">Food</li>
-                </Link>
-              </ul>
+      <nav className="navbar">
+        <Link to="/">
+          <div className="uphead">
+            <p>The</p>
+            <h1>Siren</h1>
+          </div>
+        </Link>
+        <ul>
+          <Link to="/">
+            <li className="navdesign">Home</li>
+          </Link>
+          <Link to="/Bollywood">
+            <li className="navdesign">Travelling</li>
+          </Link>
+          <Link to="/Tech">
+            <li className="navdesign">Technology</li>
+          </Link>
+          <Link to="/Hollywood">
+            <li className="navdesign">Hollywood</li>
+          </Link>
+          <Link to="/Fitness">
+            <li className="navdesign">Fitness</li>
+          </Link>
+          <Link to="/Food">
+            <li className="navdesign">Food</li>
+          </Link>
+          <Link to="/login">
+            <li className="navdesign">Login</li>
+          </Link>
+        </ul>
       </nav>
-              {/* <hr /> */}
-      
+      {/* <hr /> */}
     </div>
-  )
+  );
 }

@@ -13,7 +13,9 @@ export default function SinglePage() {
 
     useEffect(() => {
       const Store = async () => {
-        const res = await axios.get("https://testinngg.herokuapp.com/Data");
+        const res = await axios.get(
+          "https://react-blogg-back-end.vercel.app/data"
+        );
         // setDate(res)
         // console.log(res.data)
         setData(res.data);

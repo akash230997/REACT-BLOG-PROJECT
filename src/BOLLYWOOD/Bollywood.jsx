@@ -18,7 +18,7 @@ export default function Bollywood() {
     useEffect(() => {
       const Store = async () => {
         const res = await axios.get(
-          "https://blogbackendakash.herokuapp.com/Data"
+          "https://react-blogg-back-end.vercel.app/data"
         );
         // setDate(res)
         // console.log(res.data)

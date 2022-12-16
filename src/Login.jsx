@@ -1,12 +1,12 @@
 import React from "react";
-import { useState } from "react";
-import Home from "./Home/Home";
+// import { useState } from "react";
+// import Home from "./Home/Home";
 import LoginForm from "./LoginForm";
 import Main from "./Main";
-import ReBlog from "./ReBlog";
+// import ReBlog from "./ReBlog";
 
 export const Login = () => {
-  const [One, setOne] = useState(false);
+  const One = false
   return (
     <div className="validationForm">
       <div className="container">

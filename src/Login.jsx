@@ -6,7 +6,7 @@ import Main from "./Main";
 import ReBlog from "./ReBlog";
 
 export const Login = () => {
-  const [One, setOne] = useState(true);
+  const [One, setOne] = useState(false);
   return (
     <div className="validationForm">
       <div className="container">
